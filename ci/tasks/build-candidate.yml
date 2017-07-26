@@ -1,0 +1,10 @@
+---
+platform: linux
+image: docker:///boshcpi/vcloud-cpi-release
+inputs:
+  - name: bosh-cpi-src
+  - name: version-semver
+outputs:
+  - name: candidate
+run:
+  path: bosh-cpi-src/ci/tasks/build-candidate.sh

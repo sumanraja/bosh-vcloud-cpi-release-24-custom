@@ -1,0 +1,20 @@
+source 'https://rubygems.org'
+
+gem "bosh_common"
+gem "bosh_cpi"
+gem "yajl-ruby", ">=0.8.2"
+gem "builder","~>3.1.4"
+gem "httpclient", "=2.7.1"
+gem "rest-client", "~>1.6.7"
+gem "nokogiri", "~>1.6.6"
+gem "membrane"
+
+group :test, :development do
+  gem 'ci_reporter_rspec', '~> 1.0'
+  gem 'method_profiler'
+  gem 'rake', '~> 10.0'
+  gem 'rspec', '~> 3.3.0'
+  gem 'rubocop', '>= 0.24.1'
+  gem 'simplecov'
+  gem 'simplecov-rcov'
+end

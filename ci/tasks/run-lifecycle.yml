@@ -1,0 +1,20 @@
+---
+platform: linux
+image: docker:///boshcpi/vcloud-cpi-release
+inputs:
+  - name: bosh-cpi-src
+  - name: stemcell
+run:
+  path: bosh-cpi-src/ci/tasks/run-lifecycle.sh
+params:
+  VCLOUD_HOST:     ""
+  VCLOUD_USER:     ""
+  VCLOUD_PASSWORD: ""
+  VCLOUD_VLAN:     ""
+  VCLOUD_ORG:      ""
+  VCLOUD_VDC:      ""
+  NETWORK_NETMASK: ""
+  NETWORK_DNS:     ""
+  NETWORK_GATEWAY: ""
+  LIFECYCLE_IP1:   ""
+  LIFECYCLE_IP2:   ""
