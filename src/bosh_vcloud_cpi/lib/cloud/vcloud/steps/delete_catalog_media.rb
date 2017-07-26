@@ -11,7 +11,7 @@ module VCloudCloud
           media = client.reload media
           if media.running_tasks.empty?
             client.invoke_and_wait :delete, media.delete_link
-            client.invoke :delete, catalog_media
+#            client.invoke :delete, catalog_media
             return
           else
             media = client.wait_entity media
