@@ -1,0 +1,38 @@
+---
+packages:
+- name: bosh_vcloud_cpi_mkisofs
+  version: !binary |-
+    NGRmMDg3MGFjMmVkMDdiZGE1MTI4ODMzZGQ5ODgxMmY0ZWMyNGU4ZA==
+  sha1: !binary |-
+    MTg1NDA2NmE4ODU2YTFhYzkyNmRmOTQ1Y2EzZTc4NGMxZDVkOGZjYw==
+  fingerprint: !binary |-
+    NGRmMDg3MGFjMmVkMDdiZGE1MTI4ODMzZGQ5ODgxMmY0ZWMyNGU4ZA==
+  dependencies: []
+- name: bosh_vcloud_cpi
+  version: !binary |-
+    YjJkOWIyMDEzNzg0NGE2M2JhNjFhZGUzNDc0NzlhODJhMWNkMTE0Mw==
+  sha1: !binary |-
+    NzExYTQyNmNlM2I1OTE4ZWVlNmZjMjJhZmZhNjYyNjZhY2I4N2QyNg==
+  fingerprint: !binary |-
+    YjJkOWIyMDEzNzg0NGE2M2JhNjFhZGUzNDc0NzlhODJhMWNkMTE0Mw==
+  dependencies:
+  - ruby_vcloud_cpi
+- name: ruby_vcloud_cpi
+  version: !binary |-
+    ODczZDZjMGVlOGNkZjM1YzcwNjRiZTA4YjI1YTNiOGM5MDJkMDE3ZA==
+  sha1: !binary |-
+    MTlkOGExM2I4NWFlYjhlNzJhMTBiNDc4ZGY3YTYwZDA4Njk2OTA2MA==
+  fingerprint: !binary |-
+    ODczZDZjMGVlOGNkZjM1YzcwNjRiZTA4YjI1YTNiOGM5MDJkMDE3ZA==
+  dependencies: []
+jobs:
+- name: vcloud_cpi
+  version: b550a51c2662f3b64da337a58830e65d97aad28b
+  fingerprint: !binary |-
+    YjU1MGE1MWMyNjYyZjNiNjRkYTMzN2E1ODgzMGU2NWQ5N2FhZDI4Yg==
+  sha1: !binary |-
+    MmMwNzA4NThiYzA2MDFkMTM0NDE0NjJmOWQ5MTFmZDNhYmRmZTU1MA==
+commit_hash: a462d1a4
+uncommitted_changes: true
+name: bosh-vcloud-cpi-release-24-custom
+version: 0+dev.2
